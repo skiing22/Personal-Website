@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Projects | Shubham Ramola</title>
+<meta name="description" content="Shubham Ramola, M.Tech CSE (Information Security) at NIT Calicut. Researching elliptic curve scalar multiplication.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔐</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap"><nav><b>Shubham Ramola</b><div><a href="index.html">Home</a><a href="about.html">About</a><a href="projects.html" aria-current="page">Projects</a><a href="contact.html">Contact</a></div></nav></div>
+<div class="wrap"><div class="pagehead"><h1>Projects</h1><p>Current research, an AI project and a full-stack web app.</p></div></div>
+<section><div class="wrap"><h2>Work</h2><div class="body">
+  <article class="proj">
+    <h3>Optimising Elliptic Curve Scalar Multiplication <span class="t">Koblitz curves. NTL, GMP, SageMath. 2026 - present</span></h3>
+    <ul>
+      <li>Studying binary, NAF and Montgomery ladder methods for scalar multiplication over binary fields GF(2<sup>m</sup>).</li>
+      <li>Using the Frobenius endomorphism and τ-NAF representation to cut expensive point additions in elliptic curve cryptography.</li>
+      <li>Evaluating Lopez-Dahab projective coordinates to reduce field multiplications, squarings and inversions.</li>
+    </ul>
+    <div class="abstract" id="abstract">
+      <h4>Abstract</h4>
+      <p>It has been acknowledged that Elliptic Curve Cryptography (ECC) is the most efficient and the most popular Public Key Cryptography (PKC) in the contemporary world. Efficient computation of finite field arithmetic on ECC over GF(2<sup>m</sup>) brings lot of attention towards research. The scalar multiplication (SM) dominates the performance of ECC which is basically achieved by the collection of point add-and-double. In Koblitz curves, τ-NAF accelerate scalar multiplication with combinations of point addition (R = P + Q) and point doubling (R = P + P). The point addition requires more computational cost where as doubling consumes less due to Frobenius endomorphism. The point addition requires field operations like field add (A), field mul (M), field sub (S) and field inverse (I). Optimization of these field operations required for point addition, improves the efficiency of scalar multiplication. A new method to optimize field operations in point addition at the time of Scalar Multiplication on Koblitz Curves (SMKC) is proposed in this paper.</p>
+      <p>The proposed method of SMKC is modified based on Montgomery ladder scalar multiplication using Lopez-Dahab Projective Coordinates (LDPC). The LDPC reduce field operations drastically during point addition over GF(2<sup>m</sup>). The Montgomery discovered that point addition of X is independent of Y coordinate. The projective coordinates of X, Z were sufficient to find point addition of X. At the end, value of Y was evaluated with one extra inversion. Since there is no involvement of Y coordinate during point addition of X, computational cost reduce drastically. This modification helps to improve the performance of point addition further in SMKC.</p>
+      <p class="kw"><strong>Keywords:</strong> Montgomery ladder scalar multiplication, Scalar Multiplication on Koblitz Curves (SMKC), Frobenius endomorphism, Lopez-Dahab projective coordinates (LDPC)</p>
+    </div>
+  </article>
+  <article class="proj">
+    <h3><a href="https://github.com/skiing22/GeoVision" target="_blank" rel="noopener">GeoVision</a> <span class="t">Python. AI and computer vision</span></h3>
+    <ul><li>AI-driven disaster mapping and damage assessment. Code is on GitHub.</li></ul>
+  </article>
+  <article class="proj">
+    <h3>NITC Campus Facility Booking System <span class="t">React, Node.js, MongoDB, Tailwind CSS. 2025</span></h3>
+    <ul>
+      <li>Built a full-stack MERN app to automate booking and management of campus facilities.</li>
+      <li>Implemented facility selection, an availability calendar, booking requests and admin approval workflows that prevent scheduling conflicts.</li>
+      <li>Designed a responsive interface for students, faculty and facility admins.</li>
+    </ul>
+  </article>
+</div></div></section>
+<footer><div class="wrap">© 2026 Shubham Ramola. Kozhikode, Kerala, India.</div></footer>
+<script src="main.js"></script>
+</body>
+</html>
