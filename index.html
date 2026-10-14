@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shubham Ramola | Portfolio</title>
+<meta name="description" content="Shubham Ramola, M.Tech CSE (Information Security) at NIT Calicut. Researching elliptic curve scalar multiplication.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔐</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap"><nav><b>Shubham Ramola</b><div><a href="index.html" aria-current="page">Home</a><a href="about.html">About</a><a href="projects.html">Projects</a><a href="contact.html">Contact</a></div></nav></div>
+<div class="wrap"><header class="hero">
+  <div>
+    <h1>Shubham Ramola</h1>
+    <p><strong>M.Tech student in Information Security at NIT Calicut.</strong> My research is on optimising elliptic curve scalar multiplication, the operation that decides how fast elliptic curve cryptography runs.</p>
+    <div class="btns"><a class="btn fill" href="projects.html">See my research</a><a class="btn" href="contact.html">Get in touch</a></div>
+  </div>
+  <figure>
+    <canvas id="c" role="img" aria-label="Interactive elliptic curve showing point addition"></canvas>
+    <figcaption>Move your pointer over the curve. P follows you, and P + Q is recomputed live on y² = x³ − 3x + 3. Scalar multiplication repeats this step thousands of times, so my research looks for ways to do it less.</figcaption>
+  </figure>
+</header></div>
+<section><div class="wrap"><h2>Current research</h2><div class="body">
+  <p>I'm comparing binary, NAF and Montgomery ladder methods for scalar multiplication, and optimising them on Koblitz curves with the Frobenius endomorphism, τ-NAF representation and Lopez-Dahab projective coordinates.</p>
+  <p><a href="projects.html">Read the project details</a></p>
+</div></div></section>
+<footer><div class="wrap">© 2026 Shubham Ramola. Kozhikode, Kerala, India.</div></footer>
+<script src="main.js"></script>
+</body>
+</html>
